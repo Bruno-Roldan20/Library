@@ -52,3 +52,15 @@ function bookCreation() {
     alert("fill in all the fields");
   }
 }
+
+let showAside = document.getElementsByClassName("add")[0];
+
+showAside.addEventListener("click", () => {
+  document.getElementsByTagName("aside")[0].style.display = "flex";
+});
+
+let closeAside = document.getElementsByClassName("close-aside")[0];
+
+closeAside.addEventListener("click", () => {
+  document.getElementsByTagName("aside")[0].style.display = "none";
+});

@@ -18,10 +18,13 @@ aside {
 .book-data {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
 input {
-  font-size: 1.2em;
-  width: 20vw;
+  font-size: 1.4em;
+  width: 80%;
   background: none;
   border: none;
   border-bottom: 2px solid #da0037;
@@ -32,7 +35,8 @@ input::placeholder {
   color: rgba(120, 120, 120, 1);
 }
 h1 {
-  font-size: 3em;
+  font-size: 7.2vw;
+  text-align: center;
 }
 .add-book {
   margin-top: 1em;
@@ -85,4 +89,57 @@ main p {
 }
 .readStatus:hover {
   cursor: pointer;
+}
+.add {
+  position: absolute;
+  display: none;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 1em 0 0 1em;
+}
+.close-aside {
+  display: none;
+  align-self: flex-end;
+  margin: 1em 1em -1em 0;
+  width: 3em;
+  height: 3em;
+  font-size: 1em;
+}
+@media (max-width: 650px) {
+  aside {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    border: none;
+  }
+  input {
+    font-size: 1.5em;
+  }
+  .add-book {
+    width: 20vw;
+    height: 5vh;
+    font-size: 1em;
+  }
+  main {
+    width: 100vw;
+  }
+  .add {
+    display: block;
+  }
+  .data-books {
+    width: 80vw;
+  }
+  main p {
+    margin: 0 0.5em 0 0.5em;
+  }
+  h1 {
+    font-size: 20vw;
+  }
+  .close-aside {
+    display: block;
+  }
+  .book {
+    height: ;
+    width: 80vw;
+  }
 }
