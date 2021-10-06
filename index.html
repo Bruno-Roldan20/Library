@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <aside>
+      <h1>Library</h1>
+      <form class="book-data">
+        <input
+          class="input-data"
+          type="text"
+          placeholder="Book name"
+          required
+        />
+        <input
+          class="input-data"
+          type="text"
+          placeholder="Autor name"
+          required
+        />
+        <input
+          class="input-data"
+          type="number"
+          placeholder="Pages number"
+          required
+        />
+        <button class="add-book" type="button">
+          Add
+        </button>
+      </form>
+    </aside>
+
+    <main>
+      <div class="data-books">
+        <p>Name</p>
+        <p>Author</p>
+        <p>Pages</p>
+        <p>Status</p>
+      </div>
+      <div class="books-container"></div>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
